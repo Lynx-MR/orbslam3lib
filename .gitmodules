@@ -1,6 +1,6 @@
 [submodule "app/src/main/cpp/Thirdparty/g2o"]
 	path = app/src/main/cpp/Thirdparty/g2o
-	url = https://github.com/RainerKuemmerle/g2o
+	url = https://github.com/RainerKuemmerle/g2o.git
 [submodule "app/src/main/cpp/Thirdparty/DBoW2"]
 	path = app/src/main/cpp/Thirdparty/DBoW2
 	url = https://github.com/dorian3d/DBoW2
