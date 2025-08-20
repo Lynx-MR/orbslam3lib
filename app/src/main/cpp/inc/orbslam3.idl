@@ -1,0 +1,22 @@
+//============================================================================
+/// @file calculator.idl
+///
+                                                           //qidl copyright
+//% Copyright (c) 2012-2020 Qualcomm Technologies, Inc.
+                                                           //qidl nested=false
+//% All Rights Reserved.
+//% Qualcomm Confidential and Proprietary
+//============================================================================
+
+#include "AEEStdDef.idl"
+#include "remote.idl"
+
+interface orbslam3 : remote_handle64{
+   long extractFeatures(in sequence<octet> image, in long width, in long height, in long stride, in long threshold, in long vLappingAreaLeft0, in long vLappingAreaLeft1, in long vLappingAreaRight0, in long vLappingAreaRight1,
+    rout long leftKeypointsCount, rout sequence<long> leftKeypointsX, rout sequence<long> leftKeypointsY, rout sequence<long> leftKeypointsAngles, rout sequence<long> leftKeypointsLevels, rout sequence<octet> leftKeypointsORB,
+    rout long rightKeypointsCount, rout sequence<long> rightKeypointsX, rout sequence<long> rightKeypointsY, rout sequence<long> rightKeypointsAngles, rout sequence<long> rightKeypointsLevels, rout sequence<octet> rightKeypointsORB,
+    rout long monoLeft, rout long monoRight,
+    rout sequence<short> indices, rout sequence<short> distances1, rout sequence<short> distances2); //TODO return the result
+
+    long bfMatchStereo(in sequence<octet> leftDescriptors, in sequence<octet> rightDescriptors, rout sequence<short> indices, rout sequence<short> distances1, rout sequence<short> distances2);
+};

@@ -1,0 +1,10 @@
+hexagon_Release_toolv87_v66/
+hexagon_ReleaseG_toolv87_v66/
+build/
+.vscode/
+testsigs/
+hexagon_Debug_toolv87_v66/
+hexagon_DebugG_toolv87_v66/
+output/
+test_out/
+hw/

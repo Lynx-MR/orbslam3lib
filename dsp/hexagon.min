@@ -1,0 +1,26 @@
+# LEGACY BUILD SYSTEM, PLEASE USE CMAKE INSTEAD
+
+#Set NO_QURT_INC to 1 to disable qurt libraries/headers inclusion
+#NO_QURT_INC = 1
+# DO NOT UNCOMMENT OR MULTITHREADING WILL NOT WORK!!!
+
+BUILD_DLLS += liborbslam3_skel
+
+liborbslam3_skel_QAICIDLS += ../app/src/main/cpp/inc/orbslam3
+liborbslam3_skel_C_SRCS += $(OBJ_DIR)/orbslam3_skel
+liborbslam3_skel.C_SRCS += src/orbslam_dsp.cpp
+liborbslam3_skel.C_SRCS += src/orbslam_dsp_pyramid.cpp
+liborbslam3_skel.C_SRCS += src/orbslam_dsp_fast.cpp
+liborbslam3_skel.C_SRCS += src/orbslam_dsp_sort.cpp
+liborbslam3_skel.C_SRCS += src/orbslam_dsp_rb.cpp
+liborbslam3_skel.C_SRCS += src/orbslam_dsp_matcher.cpp
+
+# liborbslam3_skel.C_SRCS += src/orbslam_dsp_tests.cpp
+
+
+liborbslam3_skel_LIBS += lib/liborbslam3hwa_skel
+
+# copy final build products to the ship directory
+BUILD_COPIES += \
+   $(DLLS) \
+   $(SHIP_DIR)/ ;

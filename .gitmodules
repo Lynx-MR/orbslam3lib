@@ -1,0 +1,12 @@
+[submodule "app/src/main/cpp/Thirdparty/g2o"]
+	path = app/src/main/cpp/Thirdparty/g2o
+	url = https://github.com/RainerKuemmerle/g2o
+[submodule "app/src/main/cpp/Thirdparty/DBoW2"]
+	path = app/src/main/cpp/Thirdparty/DBoW2
+	url = https://github.com/dorian3d/DBoW2
+[submodule "app/src/main/cpp/Thirdparty/eigen-3.4.0"]
+	path = app/src/main/cpp/Thirdparty/eigen-3.4.0
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "app/src/main/cpp/Thirdparty/Sophus"]
+	path = app/src/main/cpp/Thirdparty/Sophus
+	url = https://github.com/strasdat/Sophus.git
