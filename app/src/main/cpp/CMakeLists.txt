@@ -35,7 +35,7 @@ message(STATUS "Requiring C++17 standard.")
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-set(OPENCV_SDK_URL "https://sourceforge.net/projects/opencvlibrary/files/4.2.0/opencv-4.2.0-android-sdk.zip/download")
+set(OPENCV_SDK_URL "https://github.com/opencv/opencv/releases/download/4.2.0/opencv-4.2.0-android-sdk.zip")
 set(OPENCV_SDK_DIR "${PROJECT_SOURCE_DIR}/Thirdparty/OpenCV-android-sdk")
 
 if(NOT EXISTS "${OPENCV_SDK_DIR}")
