@@ -18,10 +18,10 @@ For any questions, feel free to reach the Lynx team at system-team+6dof@lynx-r.c
 
 # Dependencies
 
-- Android Studio Narwhal (agp > 8.13)
-- Qualcomm Hexagon SDK (version 5.5.X.X supporting architecture DSP v66)
+- Android Studio Narwhal 2025.1.2
+- Qualcomm Hexagon SDK 5.5.5.0
 - Python (<= 3.11)
-- Android NDK for native C++ development
+- Define an HEXAGON_SDK_ROOT environment variable pointing to Qualcomm Hexagon SDK path. (Exemple: C:\Qualcomm\Hexagon_SDK\5.5.5.0 )
 - Submodules (automatically cloned) : Sophus, DBoW2, eigen-3.4.0, g2o
 - Automatically downloaded during sync : OpenCV-android-sdk
 
