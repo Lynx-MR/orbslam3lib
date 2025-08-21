@@ -15,8 +15,18 @@ For any questions, feel free to reach the Lynx team at system-team+6dof@lynx-r.c
 - Porting heavy computations of ORB-SLAM3 (https://github.com/UZ-SLAMLab/ORB_SLAM3) to the DSP and HWA for lower latency and higher FPS in SLAM.
 - Ported on DSP by Gaston Rouquette (Lynx Mixed Reality).
 
+
+# Dependencies
+
+- Android Studio Narwhal (agp > 8.13)
+- Qualcomm Hexagon SDK (version 5.5.X.X supporting architecture DSP v66)
+- Python (<= 3.11)
+- Android NDK for native C++ development
+- Submodules (automatically cloned) : Sophus, DBoW2, eigen-3.4.0, g2o
+- Automatically downloaded during sync : OpenCV-android-sdk
+
 # Clone & Installation
-- Please clone this repo using `git clone --recurse-submodules <GIT URL>` to automatically download the dependencies.
+- Please clone this repo using `git clone --recurse-submodules https://github.com/Lynx-MR/orbslam3lib` to automatically download the dependencies.
 - Open the project in Android Studio to build the project (CPU-Side)
 - For the DSP side, open the DSP folder in an IDE and use the different scripts.
 
